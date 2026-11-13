@@ -26,6 +26,8 @@ Technology contributes **$168,288** of the **$220,103 gross-profit shortfall**. 
 
 ## Explore the project
 
+- **[Read the project case study](docs/Finance_Performance_Case_Study.pdf)** — a three-page explanation in simple English. [Editable Word version](docs/Finance_Performance_Case_Study.docx).
+
 - **[Download the Power BI report](Finance_Performance.pbix?raw=true)** — two interactive report pages with imported data. Download and open in Power BI Desktop; GitHub does not render PBIX interactively.
 - **[Read the SQL pipeline](sqlserver/01_Create_and_Load.sql)** — database setup, embedded synthetic data, constraints, monthly aggregation and validation.
 - **[Review the finance analysis SQL](sqlserver/03_Finance_Analysis.sql)** — category drivers, regional rankings and year-over-year trends.
@@ -60,3 +62,4 @@ All **nine SQL Server assertions passed** in SSMS: row counts, unique fact grain
 ## Scope and disclosure
 
 This is an AI-assisted personal learning project using **entirely synthetic data**, not employer or client work. The data generator deliberately introduces Technology discount/cost pressure and a West Technology shortfall. Findings demonstrate analytical methods rather than independent research. Gross profit excludes operating expenses, tax and financing; the dataset does not support net profit, cash-flow or price-volume conclusions. Fact grain is monthly.
+
