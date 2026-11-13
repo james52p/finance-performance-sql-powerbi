@@ -1,0 +1,16 @@
+// Create each measure separately in a dedicated Finance_KPIs measure table. Ratios use total amounts, not averages.
+Revenue = SUM(fact_finance[revenue])
+Budget Revenue = SUM(fact_finance[budget_revenue])
+COGS = SUM(fact_finance[cogs])
+Gross Profit = [Revenue] - [COGS]
+Budget Gross Profit = [Budget Revenue] - SUM(fact_finance[budget_cogs])
+Revenue Variance = [Revenue] - [Budget Revenue]
+Revenue Variance % = DIVIDE([Revenue Variance], [Budget Revenue])
+Gross Profit Variance = [Gross Profit] - [Budget Gross Profit]
+Gross Margin % = DIVIDE([Gross Profit], [Revenue])
+Budget Margin % = DIVIDE([Budget Gross Profit], [Budget Revenue])
+Margin Variance pp = ([Gross Margin %] - [Budget Margin %]) * 100
+Discount Rate % = DIVIDE(SUM(fact_finance[discount]), SUM(fact_finance[gross_revenue]))
+Revenue PY = CALCULATE([Revenue], SAMEPERIODLASTYEAR(dim_date[date]))
+Revenue YoY % = DIVIDE([Revenue] - [Revenue PY], [Revenue PY])
+Revenue YTD = TOTALYTD([Revenue], dim_date[date])

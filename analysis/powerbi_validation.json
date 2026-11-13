@@ -1,0 +1,21 @@
+{
+  "native_pbix_saved": true,
+  "sql_server_refresh": "completed",
+  "pages_visually_checked": [
+    "Financial overview",
+    "Variance investigation"
+  ],
+  "2025_reconciled": {
+    "revenue": 3761180.89,
+    "budget_revenue": 3931645.14,
+    "revenue_variance": -170464.25,
+    "gross_profit": 937548.24,
+    "gross_margin_display": "24.9%",
+    "revenue_yoy_display": "7.9%"
+  },
+  "limitations": [
+    "Page slicers are independent",
+    "Use a single year for YoY interpretation",
+    "Daily reporting unsupported"
+  ]
+}

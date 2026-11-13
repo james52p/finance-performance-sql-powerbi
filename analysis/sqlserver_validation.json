@@ -1,0 +1,22 @@
+{
+  "engine": "SQL Server 2025 Express",
+  "database": "FinancePortfolio2025",
+  "observed_in": "SQL Server Management Studio results grid",
+  "status": "PASS: all nine SQL Server checks",
+  "annual_results": [
+    {
+      "year": 2024,
+      "revenue": 3486437.41,
+      "budget_revenue": 3640412.16,
+      "revenue_variance": -153974.75,
+      "gross_profit": 963279.73
+    },
+    {
+      "year": 2025,
+      "revenue": 3761180.89,
+      "budget_revenue": 3931645.14,
+      "revenue_variance": -170464.25,
+      "gross_profit": 937548.24
+    }
+  ]
+}
